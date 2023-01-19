@@ -6,7 +6,7 @@
 <ul id="movies"></ul>
 <script>
     (async () => {
-        let results = await fetch("/.netlify/functions/get_movies").then(response => response.json());
+        let results = await fetch("/.netlify/edge-functions/get_movies").then(response => response.json());
         results.forEach(result => {
             const listItem = document.createElement("li");
             listItem.innerText = result.title;
