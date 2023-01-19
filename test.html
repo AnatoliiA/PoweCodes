@@ -10,6 +10,7 @@
         results.forEach(result => {
             const listItem = document.createElement("li");
             listItem.innerText = result.title;
+            console.log(results.toString());
             document.getElementById("user").appendChild(listItem);
         });
     })();
